@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body{
+            background-color: black;
+            color: #fff;
+            font-family: "Lato", sans-serif;
+            }
+            .card{
+                border-color: black;
+                background-color: black;
+                color: #fff;
+            }
+        header{
+            position: sticky;
+            top: 0;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            background-color: black;
+            z-index: 1000;
+        }
+
+        .nav-item .nav-link{
+            color: #fff;
+        }
+
+        .nav-item .nav-link.active{
+            background-color: red;
+        }
+
+        nav{
+            text-align: center;
+            margin-top: 5px;
+        }
+        h4{
+            text-align: center;
+        }
+        .navbar-toggler{
+            background-color: red;
+        }
+        
+        section{
+            margin-bottom: 10px;
+            padding-top: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <header >
+        <h1>Relaxing Views</h1>
+        <div class="navbar navbar-expand-lg" >
+            <div  class="container justify-content-center  ">
+                <div class="navbar justify-content-center   ">
+                    <button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#cardapio">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav id="cardapio" class="collapse navbar-collapse ">
+                        <ul  class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#nature">Nature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#canada">Canada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#animals">Animals</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="carousel-alegria" class="carousel slide carousel-fade mb-1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="./assets/aurora 2.jpg" class="img-fluid">
+                    <div class="carousel-caption">
+                        <h5>Aurora Boreal</h5>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./assets/aurora.jpg" class="img-fluid" >
+                    <div class="carousel-caption">
+                        <h5>Aurora Boreal pt.2</h5>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./assets/arvore-gelo.jpg" class="img-fluid">
+                    <div class="carousel-caption">
+                        <h5>Arvore de neve</h5>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="./assets/raposa.jpg" class="img-fluid" alt="">
+                    <div class="carousel-caption">
+                        <h5>Raposa</h5>
+                    </div>
+
+                </div>
+                <button data-bs-target="#carousel-alegria" class="carousel-control-prev" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-alegria" class="carousel-control-next" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-alegria" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-alegria" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-alegria" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-alegria" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+        <section id="nature" class="container">
+            <h4>Nature</h4>
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/sunrise.jpg" class="img-fluid"  alt="">
+                    </div>
+                </div>
+                    
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/sunset.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/natureza.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="card">
+            <div class="card-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure inventore obcaecati ipsam nemo illo, aperiam dolorum architecto sequi velit ipsa, neque eaque totam saepe officia? Exercitationem eveniet totam accusamus dicta!
+            </div>
+        </article>
+        <section id="canada" class="container">
+            <h4 >Canada</h4>
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/canada0.jpg" class="img-fluid"  alt="">
+                    </div>
+                </div>
+                    
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/canada2.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/canada3.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="card">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non ipsam a id exercitationem minima. Fugiat quaerat earum quis tenetur omnis iste ipsa in ab obcaecati minus. Ea, quidem voluptatum.
+            </div>
+        </article>
+        <section id="animals" class="container">
+            <h4 >Animals</h4>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/05/09/51/moose-7571491_1280.jpg" class="img-fluid"  alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/bear.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./assets/cat 1.webp" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="card">
+            <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, harum illum. Consequatur dolorem ducimus ratione sint quod ipsa esse itaque eius ut doloremque reprehenderit impedit rem, recusandae saepe odio quibusdam!</div>
+        </article>
+    </div>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const navLink = document.querySelectorAll(".nav-link")
+
+            navLink.forEach(function (tren){
+                tren.addEventListener("click", function(){
+                    navLink.forEach(function(navOutro){
+                        navOutro.classList.remove("active")
+                    })
+                    tren.classList.add("active")
+                })
+            })
+        })
+    </script>
+</body>
+</html>
